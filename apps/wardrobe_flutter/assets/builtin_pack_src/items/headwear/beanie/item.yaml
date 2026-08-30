@@ -1,0 +1,20 @@
+{
+  "id": "beanie",
+  "name": "Beanie",
+  "category": "headwear",
+  "path": "items/headwear/beanie/image.png",
+  "thumb_path": "items/headwear/beanie/thumb.png",
+  "meta_path": "items/headwear/beanie/item.yaml",
+  "subcategory": "beanie",
+  "color_primary": "gray",
+  "material": "cotton",
+  "style_occasion": "casual",
+  "pattern_design": "solid",
+  "tags": [],
+  "classification": {
+    "provider": "ollama",
+    "model": "qwen3-vl:4b",
+    "classified_at": "2026-02-21T13:01:30.707388+00:00",
+    "prompt_version": "2026-02-21-v1"
+  }
+}

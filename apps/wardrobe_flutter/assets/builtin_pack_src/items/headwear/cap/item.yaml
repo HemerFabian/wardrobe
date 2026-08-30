@@ -1,0 +1,20 @@
+{
+  "id": "cap",
+  "name": "Cap",
+  "category": "headwear",
+  "path": "items/headwear/cap/image.png",
+  "thumb_path": "items/headwear/cap/thumb.png",
+  "meta_path": "items/headwear/cap/item.yaml",
+  "subcategory": "cap",
+  "color_primary": "black",
+  "material": "cotton",
+  "style_occasion": "casual",
+  "pattern_design": "graphic",
+  "tags": [],
+  "classification": {
+    "provider": "ollama",
+    "model": "qwen3-vl:4b",
+    "classified_at": "2026-02-21T13:02:09.883384+00:00",
+    "prompt_version": "2026-02-21-v1"
+  }
+}

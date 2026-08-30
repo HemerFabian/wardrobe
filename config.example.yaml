@@ -1,0 +1,14 @@
+# Wardrobe works with localhost defaults and does not require this file.
+# Copy it to config.local.yaml only when your local services or model paths differ.
+
+comfyui:
+  endpoint: http://127.0.0.1:8188
+
+vlm:
+  endpoint: http://127.0.0.1:11434
+  model: qwen3-vl:8b-instruct-q4_K_M
+
+cutout:
+  sam_checkpoint: models/sam_vit_h_4b8939.pth
+  device: auto
+  allow_download: false

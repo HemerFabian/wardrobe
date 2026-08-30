@@ -1,0 +1,47 @@
+# Wardrobe v0.1.0
+
+Wardrobe is an offline-first Android wardrobe app paired with a local Python
+generation pipeline. This first portfolio release includes a synthetic demo
+wardrobe, so the app can be explored without personal photos, API keys, model
+downloads, or a running backend.
+
+## Highlights
+
+- Capture and export pose and clothing inputs on Android.
+- Browse generated outfits, filters, favorites, edits, and regeneration state.
+- Classify locally with Qwen3-VL through Ollama and render with FLUX.2 [klein]
+  4B through ComfyUI.
+- Create headwear and shoe cutouts with GroundingDINO and Segment Anything.
+- Reproduce the complete file pipeline with the deterministic mock smoke test.
+
+## Android download
+
+`wardrobe-v0.1.0-android-universal.apk` is a signed universal APK for ARM64,
+ARMv7, and x86_64 Android devices. Size: **{{APK_SIZE}}**.
+
+This app is distributed directly through GitHub rather than Google Play.
+Android will ask you to allow installation from your browser or file manager.
+Only install the asset downloaded from this release.
+
+- APK SHA-256: `{{APK_SHA256}}`
+- Signing-certificate SHA-256: `{{CERTIFICATE_SHA256}}`
+
+The APK requests no normal Internet, camera, or broad external-storage
+permission. The bundled synthetic content works offline.
+
+## Verification
+
+- 74 Python tests, Ruff, and deterministic ZIP smoke test.
+- 91 Flutter tests, format check, static analysis, and Android builds.
+- Real local Ollama → ComfyUI → GroundingDINO/SAM → pack → Android import run.
+- Visual Android checks for the generated base outfit, beanie, and shoe overlays.
+- Privacy audit of the release tree, Git history, archive contents, and images.
+
+See `docs/VERIFICATION.md` for the exercised paths and `README.md` for setup.
+
+## Known limitations
+
+- Android is the only end-to-end supported app target.
+- The full AI pipeline requires substantial local model setup and storage.
+- Generated image quality can vary and may require rerendering or review.
+- The APK is sideloaded from GitHub and is not distributed through Google Play.

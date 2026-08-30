@@ -1,0 +1,103 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python lint and tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --dev --locked
+
+      - name: Lint
+        run: uv run ruff check src tests/python
+
+      - name: Run Python tests
+        run: uv run pytest
+
+  smoke:
+    name: Deterministic demo smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+        with:
+          # The Python job owns the shared uv cache. Disabling it here avoids
+          # parallel cache-save races while keeping this short smoke job isolated.
+          enable-cache: false
+
+      - name: Install dependencies
+        run: uv sync --dev --locked
+
+      - name: Validate the fresh mock pipeline and ZIP
+        run: scripts/smoke_demo.sh
+
+  flutter:
+    name: Flutter checks
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/wardrobe_flutter
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2.23.0
+        with:
+          flutter-version: "3.38.9"
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Verify release signing guard
+        shell: bash
+        run: |
+          set +e
+          flutter build apk --release > /tmp/wardrobe-release-guard.log 2>&1
+          status=$?
+          set -e
+          test "$status" -ne 0
+          grep -F "Release signing requires WARDROBE_KEYSTORE_PATH" \
+            /tmp/wardrobe-release-guard.log
+
+      - name: Check formatting
+        run: dart format --output=none --set-exit-if-changed lib test
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Test
+        run: flutter test
+
+      - name: Build Android debug APK
+        run: flutter build apk --debug

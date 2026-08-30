@@ -1,0 +1,8 @@
+{
+  "id": "dummy1",
+  "name": "Standing Neutral",
+  "path": "poses/dummy1/pose.png",
+  "thumb_path": "poses/dummy1/thumb.png",
+  "meta_path": "poses/dummy1/pose.yaml",
+  "render_ready": true
+}

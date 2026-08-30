@@ -1,0 +1,32 @@
+name: wardrobe_flutter
+description: Offline wardrobe viewer for ZIP-imported content packs.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  archive: ^4.0.7
+  file_picker: ^10.3.2
+  image: ^4.5.4
+  image_picker: ^1.2.0
+  image_picker_android: ^0.8.13+3
+  image_picker_platform_interface: ^2.11.0
+  material_design_icons_flutter: 7.0.7296
+  path: ^1.9.1
+  path_provider: ^2.1.5
+  sensors_plus: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/builtin_pack/wardrobe_pack.zip

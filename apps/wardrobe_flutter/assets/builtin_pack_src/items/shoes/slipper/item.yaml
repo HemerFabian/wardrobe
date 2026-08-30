@@ -1,0 +1,20 @@
+{
+  "id": "slipper",
+  "name": "Slipper",
+  "category": "shoes",
+  "path": "items/shoes/slipper/image.png",
+  "thumb_path": "items/shoes/slipper/thumb.png",
+  "meta_path": "items/shoes/slipper/item.yaml",
+  "subcategory": "slippers",
+  "color_primary": "beige",
+  "material": "cotton",
+  "style_occasion": "casual",
+  "pattern_design": "graphic",
+  "tags": [],
+  "classification": {
+    "provider": "ollama",
+    "model": "qwen3-vl:4b",
+    "classified_at": "2026-02-21T13:02:20.287567+00:00",
+    "prompt_version": "2026-02-21-v1"
+  }
+}

@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+config.local.yaml
+config.local.yml
+config.local.json
+
+# Flutter / Dart / Android build outputs
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+apps/wardrobe_flutter/build/
+apps/wardrobe_flutter/.dart_tool/
+apps/wardrobe_flutter/android/local.properties
+apps/wardrobe_flutter/**/*.iml
+/dist/
+
+# Local signing material
+apps/wardrobe_flutter/android/key.properties
+**/*.keystore
+**/*.jks
+**/*.p12
+**/*.pfx
+**/*.pem
+**/*.key
+
+# Local generated data, model weights, and experiments
+generated/
+generated_tests/
+wardrobe_workspace*/
+/models/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.onnx
+src/wardrobe_gen/output/
+test_input_images/
+
+# Local archives and marketing captures
+wardrobe_workspace*.zip
+wardrobe_demo*.mp4
+*.zip
+!apps/wardrobe_flutter/assets/builtin_pack/wardrobe_pack.zip
+*.mp4
+*.mov
+*.avi
+*.mkv
+**/PXL_*.*
+**/IMG_*.*
+**/VID_*.*

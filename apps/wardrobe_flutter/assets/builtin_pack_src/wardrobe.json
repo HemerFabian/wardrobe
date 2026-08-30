@@ -1,0 +1,526 @@
+{
+  "schema_version": 5,
+  "generated_at": "2026-04-28T17:40:38.760518+00:00",
+  "images": {
+    "output_size": [
+      1088,
+      1664
+    ],
+    "image_format": "webp",
+    "overlay_format": "png",
+    "thumbnail_size": [
+      256,
+      256
+    ],
+    "thumbnail_format": "jpg"
+  },
+  "poses": [
+    {
+      "id": "dummy1",
+      "name": "Standing Neutral",
+      "path": "poses/dummy1/pose.png",
+      "render_ready": true,
+      "meta_path": "poses/dummy1/pose.yaml",
+      "thumb_path": "poses/dummy1/thumb.jpg"
+    },
+    {
+      "id": "dummy2",
+      "name": "Neutral Standing",
+      "path": "poses/dummy2/pose.png",
+      "render_ready": true,
+      "meta_path": "poses/dummy2/pose.yaml",
+      "thumb_path": "poses/dummy2/thumb.jpg"
+    }
+  ],
+  "categories": {
+    "top": [
+      {
+        "id": "rex",
+        "name": "Rex",
+        "category": "top",
+        "subcategory": "sweatshirt",
+        "color_primary": "black",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "graphic",
+        "path": "items/top/rex/image.png",
+        "thumb_path": "items/top/rex/thumb.jpg",
+        "meta_path": "items/top/rex/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:02:47.673123+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      },
+      {
+        "id": "sweater",
+        "name": "Sweater",
+        "category": "top",
+        "subcategory": "sweatshirt",
+        "color_primary": "pink",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "solid",
+        "path": "items/top/sweater/image.png",
+        "thumb_path": "items/top/sweater/thumb.jpg",
+        "meta_path": "items/top/sweater/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:03:06.311584+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      },
+      {
+        "id": "tiedye",
+        "name": "Tiedye",
+        "category": "top",
+        "subcategory": "t-shirt",
+        "color_primary": "blue",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "graphic",
+        "path": "items/top/tiedye/image.png",
+        "thumb_path": "items/top/tiedye/thumb.jpg",
+        "meta_path": "items/top/tiedye/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:03:25.662345+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      }
+    ],
+    "bottom": [
+      {
+        "id": "cargo",
+        "name": "Cargo",
+        "category": "bottom",
+        "subcategory": "cargo shorts",
+        "color_primary": "dark blue",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "solid",
+        "path": "items/bottom/cargo/image.png",
+        "thumb_path": "items/bottom/cargo/thumb.jpg",
+        "meta_path": "items/bottom/cargo/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:01:13.523857+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      },
+      {
+        "id": "jeans",
+        "name": "Jeans",
+        "category": "bottom",
+        "subcategory": "jeans",
+        "color_primary": "blue",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "solid",
+        "path": "items/bottom/jeans/image.png",
+        "thumb_path": "items/bottom/jeans/thumb.jpg",
+        "meta_path": "items/bottom/jeans/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:01:22.255369+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      }
+    ],
+    "headwear": [
+      {
+        "id": "beanie",
+        "name": "Beanie",
+        "category": "headwear",
+        "subcategory": "beanie",
+        "color_primary": "gray",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "solid",
+        "path": "items/headwear/beanie/image.png",
+        "thumb_path": "items/headwear/beanie/thumb.jpg",
+        "meta_path": "items/headwear/beanie/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:01:30.707388+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      },
+      {
+        "id": "bucket",
+        "name": "Bucket",
+        "category": "headwear",
+        "subcategory": "bucket hat",
+        "color_primary": "blue",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "solid",
+        "path": "items/headwear/bucket/image.png",
+        "thumb_path": "items/headwear/bucket/thumb.jpg",
+        "meta_path": "items/headwear/bucket/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:01:50.359771+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      },
+      {
+        "id": "cap",
+        "name": "Cap",
+        "category": "headwear",
+        "subcategory": "cap",
+        "color_primary": "black",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "graphic",
+        "path": "items/headwear/cap/image.png",
+        "thumb_path": "items/headwear/cap/thumb.jpg",
+        "meta_path": "items/headwear/cap/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:02:09.883384+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      }
+    ],
+    "shoes": [
+      {
+        "id": "slipper",
+        "name": "Slipper",
+        "category": "shoes",
+        "subcategory": "slippers",
+        "color_primary": "beige",
+        "material": "cotton",
+        "style_occasion": "casual",
+        "pattern_design": "graphic",
+        "path": "items/shoes/slipper/image.png",
+        "thumb_path": "items/shoes/slipper/thumb.jpg",
+        "meta_path": "items/shoes/slipper/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:02:20.287567+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      },
+      {
+        "id": "sneaker",
+        "name": "Sneaker",
+        "category": "shoes",
+        "subcategory": "sneakers",
+        "color_primary": "beige",
+        "material": "leather",
+        "style_occasion": "casual",
+        "pattern_design": "solid",
+        "path": "items/shoes/sneaker/image.png",
+        "thumb_path": "items/shoes/sneaker/thumb.jpg",
+        "meta_path": "items/shoes/sneaker/item.yaml",
+        "render_ready": true,
+        "classification": {
+          "provider": "ollama",
+          "model": "qwen3-vl:4b",
+          "classified_at": "2026-02-21T13:02:42.390299+00:00",
+          "prompt_version": "2026-02-21-v1"
+        },
+        "tags": []
+      }
+    ]
+  },
+  "intake_queue": [],
+  "regeneration": {
+    "items": [],
+    "targets": []
+  },
+  "renders": [
+    {
+      "pose_id": "dummy1",
+      "top_id": "rex",
+      "bottom_id": "cargo",
+      "path": "renders/dummy1/rex__cargo.png",
+      "meta_path": "renders/dummy1/rex__cargo.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "top_id": "rex",
+      "bottom_id": "jeans",
+      "path": "renders/dummy1/rex__jeans.png",
+      "meta_path": "renders/dummy1/rex__jeans.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "top_id": "sweater",
+      "bottom_id": "cargo",
+      "path": "renders/dummy1/sweater__cargo.png",
+      "meta_path": "renders/dummy1/sweater__cargo.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "top_id": "sweater",
+      "bottom_id": "jeans",
+      "path": "renders/dummy1/sweater__jeans.png",
+      "meta_path": "renders/dummy1/sweater__jeans.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "top_id": "tiedye",
+      "bottom_id": "cargo",
+      "path": "renders/dummy1/tiedye__cargo.png",
+      "meta_path": "renders/dummy1/tiedye__cargo.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "top_id": "tiedye",
+      "bottom_id": "jeans",
+      "path": "renders/dummy1/tiedye__jeans.png",
+      "meta_path": "renders/dummy1/tiedye__jeans.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "top_id": "rex",
+      "bottom_id": "cargo",
+      "path": "renders/dummy2/rex__cargo.png",
+      "meta_path": "renders/dummy2/rex__cargo.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "top_id": "rex",
+      "bottom_id": "jeans",
+      "path": "renders/dummy2/rex__jeans.png",
+      "meta_path": "renders/dummy2/rex__jeans.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "top_id": "sweater",
+      "bottom_id": "cargo",
+      "path": "renders/dummy2/sweater__cargo.png",
+      "meta_path": "renders/dummy2/sweater__cargo.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "top_id": "sweater",
+      "bottom_id": "jeans",
+      "path": "renders/dummy2/sweater__jeans.png",
+      "meta_path": "renders/dummy2/sweater__jeans.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "top_id": "tiedye",
+      "bottom_id": "cargo",
+      "path": "renders/dummy2/tiedye__cargo.png",
+      "meta_path": "renders/dummy2/tiedye__cargo.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "top_id": "tiedye",
+      "bottom_id": "jeans",
+      "path": "renders/dummy2/tiedye__jeans.png",
+      "meta_path": "renders/dummy2/tiedye__jeans.yaml",
+      "size": [
+        1088,
+        1617
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "pose_id": "dummy1",
+      "category": "headwear",
+      "item_id": "beanie",
+      "path": "overlays/dummy1/headwear/beanie.png",
+      "meta_path": "overlays/dummy1/headwear/beanie.yaml",
+      "anchor_box": [
+        0.0,
+        0.0,
+        1.0,
+        0.200371
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "category": "headwear",
+      "item_id": "bucket",
+      "path": "overlays/dummy1/headwear/bucket.png",
+      "meta_path": "overlays/dummy1/headwear/bucket.yaml",
+      "anchor_box": [
+        0.0,
+        0.0,
+        1.0,
+        0.200371
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "category": "headwear",
+      "item_id": "cap",
+      "path": "overlays/dummy1/headwear/cap.png",
+      "meta_path": "overlays/dummy1/headwear/cap.yaml",
+      "anchor_box": [
+        0.0,
+        0.0,
+        1.0,
+        0.200371
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "category": "shoes",
+      "item_id": "slipper",
+      "path": "overlays/dummy1/shoes/slipper.png",
+      "meta_path": "overlays/dummy1/shoes/slipper.yaml",
+      "anchor_box": [
+        0.0,
+        0.839208,
+        1.0,
+        0.160792
+      ]
+    },
+    {
+      "pose_id": "dummy1",
+      "category": "shoes",
+      "item_id": "sneaker",
+      "path": "overlays/dummy1/shoes/sneaker.png",
+      "meta_path": "overlays/dummy1/shoes/sneaker.yaml",
+      "anchor_box": [
+        0.0,
+        0.839208,
+        1.0,
+        0.160792
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "category": "headwear",
+      "item_id": "beanie",
+      "path": "overlays/dummy2/headwear/beanie.png",
+      "meta_path": "overlays/dummy2/headwear/beanie.yaml",
+      "anchor_box": [
+        0.0,
+        0.0,
+        1.0,
+        0.200371
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "category": "headwear",
+      "item_id": "bucket",
+      "path": "overlays/dummy2/headwear/bucket.png",
+      "meta_path": "overlays/dummy2/headwear/bucket.yaml",
+      "anchor_box": [
+        0.0,
+        0.0,
+        1.0,
+        0.200371
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "category": "headwear",
+      "item_id": "cap",
+      "path": "overlays/dummy2/headwear/cap.png",
+      "meta_path": "overlays/dummy2/headwear/cap.yaml",
+      "anchor_box": [
+        0.0,
+        0.0,
+        1.0,
+        0.200371
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "category": "shoes",
+      "item_id": "slipper",
+      "path": "overlays/dummy2/shoes/slipper.png",
+      "meta_path": "overlays/dummy2/shoes/slipper.yaml",
+      "anchor_box": [
+        0.0,
+        0.839208,
+        1.0,
+        0.160792
+      ]
+    },
+    {
+      "pose_id": "dummy2",
+      "category": "shoes",
+      "item_id": "sneaker",
+      "path": "overlays/dummy2/shoes/sneaker.png",
+      "meta_path": "overlays/dummy2/shoes/sneaker.yaml",
+      "anchor_box": [
+        0.0,
+        0.839208,
+        1.0,
+        0.160792
+      ]
+    }
+  ]
+}
